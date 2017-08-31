@@ -61,7 +61,8 @@ table {
 
 .banner--logo-center {
   background-image: url('../images/viva.jpeg');
-  height: 250px;
+	background-repeat: no-repeat;
+	height: 250px;
   width: 250px;
 }
 
