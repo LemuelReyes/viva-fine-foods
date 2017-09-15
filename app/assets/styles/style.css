@@ -3,3 +3,4 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "modules/_hero-banner";
+@import "modules/_welcome-section";

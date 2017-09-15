@@ -452,7 +452,8 @@ template {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: white;
+	color: black;
+	font-size: 16px;
 }
 
 img {
@@ -492,5 +493,23 @@ font-size: 4.8rem;
 }
 
 .banner--title {
-    font-size: 5rem;
+    font-size: 3rem;
+    color: white;
+  }
+
+@media (min-width: 530px) {
+
+.banner--title {
+    font-size: 4.8rem
+  }
+  }
+
+.welcome--title {
+    margin: 0 auto;
+    text-align: center;
+    width: 47%;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 2rem;
   }

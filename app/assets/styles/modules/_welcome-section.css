@@ -1,0 +1,12 @@
+.welcome {
+  
+  &--title {
+    margin: 0 auto;
+    text-align: center;
+    width: 47%;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+}
