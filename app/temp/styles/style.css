@@ -452,7 +452,7 @@ template {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #333;
+	color: white;
 }
 
 img {
@@ -460,24 +460,27 @@ img {
 	height: auto;
 }
 
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100vh;
+}
+
+.flex--center {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
 .banner {
   background-image: url('../../assets/images/headerviva.jpeg');
   background-size: cover;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.banner--text-center {
-  background-image: url('../../assets/images/viva.jpeg');
-	background-repeat: no-repeat;
-	height: 250px;
-  width: 250px;
-}
+.banner--title {
+    font-size: 5rem;
+  }
