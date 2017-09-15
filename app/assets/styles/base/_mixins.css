@@ -1,0 +1,20 @@
+@define-mixin atSmall {
+  @media (min-width: 530px) {
+    @mixin-content;
+  }
+}
+
+/* to use, here is the syntax
+@mixin atSmall {
+font-size: 4.8rem;
+}
+*/ 
+
+@define-mixin atMedium {
+  @media (min-width: 800px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+}
