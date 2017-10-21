@@ -1,0 +1,12 @@
+.horizontal-lines {
+
+  &--first {
+    width: 90%;
+  }
+
+  &--second {
+    width: 90%;
+    height: 0.2rem;
+    background-color: black;
+  }
+}

@@ -4,3 +4,6 @@
 @import "base/_mixins";
 @import "modules/_hero-banner";
 @import "modules/_welcome-section";
+@import "modules/_footer";
+@import "modules/_content-paragraph";
+@import "modules/_horizontal";

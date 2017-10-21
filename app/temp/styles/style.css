@@ -513,3 +513,21 @@ font-size: 4.8rem;
     font-size: 1.3rem;
     margin-top: 2rem;
   }
+
+.content--paragraph {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    line-height: 1.7rem;
+    font-size: 1rem;
+  }
+
+.horizontal-lines--first {
+    width: 90%;
+  }
+
+.horizontal-lines--second {
+    width: 90%;
+    height: 0.2rem;
+    background-color: black;
+  }
