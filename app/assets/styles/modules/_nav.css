@@ -1,0 +1,14 @@
+.nav {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      padding-right: 10px;
+    }
+  }
+}

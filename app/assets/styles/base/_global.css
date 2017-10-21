@@ -1,7 +1,10 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	background-color: white;
 	color: black;
 	font-size: 16px;
+	margin: 0;
+	padding: 0;
 }
 
 img {
@@ -9,13 +12,16 @@ img {
 	height: auto;
 }
 
-
 .flex {
 	display: flex;
 	height: 100vh;
-		
+
 	&--center {
 		justify-content: center;
 		align-items: center;
 	}
+}
+
+ul {
+	list-style: none;
 }

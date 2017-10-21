@@ -3,8 +3,13 @@
 }
 
 .brand {
-  &--color {
+
+  &--blue {
     color: #1088a0;
+  }
+
+  &--white {
+    color: #ffffff;
   }
 
   &__bold {

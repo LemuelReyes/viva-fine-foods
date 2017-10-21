@@ -452,8 +452,11 @@ template {
 
 body {
 	font-family: 'Roboto', sans-serif;
+	background-color: white;
 	color: black;
 	font-size: 16px;
+	margin: 0;
+	padding: 0;
 }
 
 img {
@@ -477,12 +480,20 @@ img {
 		        align-items: center;
 	}
 
+ul {
+	list-style: none;
+}
+
 .banner {
 
 }
 
-.brand--color {
+.brand--blue {
     color: #1088a0;
+  }
+
+.brand--white {
+    color: #ffffff;
   }
 
 .brand__bold {
@@ -527,8 +538,33 @@ font-size: 4.8rem;
     margin-top: 0rem;
   }
 
+.footer {
+    background-color: #20252d;
+    height: 25vh;
+    color: #ffffff;
+    line-height: 1.3rem;
+}
+
+.footer__hours__top-column {
+     position: absolute;
+     -ms-flex-item-align: start;
+         align-self: flex-start;
+     margin-top: 1rem;
+   }
+
+.footer__hours__left-column {
+     width: 50%;
+     margin-top: 1rem;
+   }
+
+.footer__hours__right-column {
+     width: 36%;
+     margin-top: 1rem;
+   }
+
 .content--paragraph {
     margin: 0 auto;
+    margin-bottom: 6rem;
     text-align: center;
     width: 90%;
     line-height: 1.7rem;
@@ -546,3 +582,29 @@ font-size: 4.8rem;
     height: 3px;
     background-color: black;
   }
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+
+.nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+.nav ul li {
+      padding-right: 10px;
+    }
