@@ -478,8 +478,16 @@ img {
 	}
 
 .banner {
-  
+
 }
+
+.brand--color {
+    color: #1088a0;
+  }
+
+.brand__bold {
+    font-weight: 400;
+  }
 
 /* to use, here is the syntax
 @mixin atSmall {
@@ -507,11 +515,16 @@ font-size: 4.8rem;
 .welcome--title {
     margin: 0 auto;
     text-align: center;
-    width: 47%;
+    width: 100%;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 1.3rem;
     margin-top: 2rem;
+  }
+
+.welcome__second-line {
+    width: 100%;
+    margin-top: 0rem;
   }
 
 .content--paragraph {
@@ -524,10 +537,12 @@ font-size: 4.8rem;
 
 .horizontal-lines--first {
     width: 90%;
+    margin-bottom: 2px;
   }
 
 .horizontal-lines--second {
+    margin-top: 2px;
     width: 90%;
-    height: 0.2rem;
+    height: 3px;
     background-color: black;
   }

@@ -1,3 +1,13 @@
 .banner {
-  
+
+}
+
+.brand {
+  &--color {
+    color: #1088a0;
+  }
+
+  &__bold {
+    font-weight: 400;
+  }
 }
