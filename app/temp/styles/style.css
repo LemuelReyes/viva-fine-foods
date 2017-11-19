@@ -468,7 +468,6 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height: 100vh;
 }
 
 .flex--center {
@@ -523,6 +522,7 @@ font-size: 4.8rem;
 .banner {
   background-image: url('../../assets/images/headerviva.jpeg');
   background-size: cover;
+  position: relative;
 }
 
 .banner--title {
@@ -619,7 +619,7 @@ font-size: 4.8rem;
 .nav {
   position: absolute;
   bottom: 0;
-  right: 15px;
+  right: 0;
 }
 
 .nav ul {
@@ -655,6 +655,8 @@ font-size: 4.8rem;
       }
   }
 
+/* halves hero banner unlike home page*/
+
 .bg--halfed {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -662,13 +664,34 @@ font-size: 4.8rem;
     height: 50vh;
   }
 
+/* formats item block on menu*/
+
+.item--bar {
+    width: 100%;
+  }
+
 .item--title {
     display: inline-block;
+    font-weight: 300;
+    font-size: 0.9rem;
   }
 
 .item--price {
+    font-weight: bold;
+    font-size: 0.9rem;
   }
 
 .item--description {
-    margin-top: 0;
+    padding-top: 0;
+    margin: 0 auto;
+    max-width: 85%;
+    font-size: 0.8rem;
+  }
+
+.icon--coffee {
+    background-image: url('../../assets/images/blue-coffee.png');
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 0;
   }

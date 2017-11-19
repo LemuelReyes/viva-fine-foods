@@ -1,3 +1,5 @@
+/* halves hero banner unlike home page*/
+
 .bg {
   &--halfed {
     display: flex;

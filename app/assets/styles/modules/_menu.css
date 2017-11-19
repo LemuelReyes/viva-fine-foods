@@ -1,0 +1,22 @@
+/* formats item block on menu*/
+
+.item {
+  &--bar {
+    width: 100%;
+  }
+  &--title {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  &--price {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  &--description {
+    padding-top: 0;
+    margin: 0 auto;
+    max-width: 85%;
+    font-size: 0.8rem;
+  }
+}
