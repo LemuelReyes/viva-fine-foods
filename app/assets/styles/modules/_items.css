@@ -1,0 +1,10 @@
+.item {
+  &--title {
+    display: inline-block;
+  }
+  &--price {
+  }
+  &--description {
+    margin-top: 0;
+  }
+}

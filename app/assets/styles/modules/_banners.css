@@ -21,6 +21,7 @@
     background-position: bottom;
     height: 30vh;
     background-repeat: no-repeat;
+    position: relative;
   }
 }
 
