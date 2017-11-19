@@ -1,0 +1,26 @@
+.banner {
+  background-image: url('../../assets/images/headerviva.jpeg');
+  background-size: cover;
+
+  &--title {
+    font-size: 3rem;
+    color: white;
+    
+    @mixin atSmall {
+    font-size: 4.8rem;
+    }
+  }
+  
+  &--title-adjustment {
+    margin-bottom: 0.5rem;
+  }
+  
+  &--breakfast-menu {
+    background-image: url('../../assets/images/breakfast-banner-bg.jpg');
+    background-size: 29rem 24rem;
+    background-position: bottom;
+    height: 30vh;
+    background-repeat: no-repeat;
+  }
+}
+

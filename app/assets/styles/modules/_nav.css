@@ -13,14 +13,14 @@
   }
 }
 
-.menu {
+.dropdown {
   
-  &--hide {
+  &--menu-hide {
     ul {
       display: none;
     }
   }
-  &--reveal:hover {
+  &--menu-reveal:hover {
     ul {
       display: block;
     }

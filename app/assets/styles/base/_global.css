@@ -20,6 +20,11 @@ img {
 		justify-content: center;
 		align-items: center;
 	}
+	
+	&--end {
+		justify-content: center;
+		align-items: flex-end;
+	}
 }
 
 ul {

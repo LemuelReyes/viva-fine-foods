@@ -1,7 +1,6 @@
 .bg {
-  
-  &--half-size {
-    background-image: url('../../assets/images/headerviva.jpeg');
-    background-size: cover;
+  &--halfed {
+    display: flex;
+    height: 50vh;
   }
 }
