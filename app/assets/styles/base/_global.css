@@ -15,7 +15,7 @@ img {
 .flex {
 	display: flex;
 	height: 100vh;
-
+	
 	&--center {
 		justify-content: center;
 		align-items: center;
