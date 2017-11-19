@@ -519,11 +519,19 @@ font-size: 4.8rem;
 }
 */
 
-.banner {
-  background-image: url('../../assets/images/headerviva.jpeg');
-  background-size: cover;
-  position: relative;
-}
+.banner--main {
+    background-image: url('../../assets/images/headerviva.jpeg');
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+  }
+
+.banner--main-halved {
+    background-image: url('../../assets/images/headerviva.jpeg');
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+  }
 
 .banner--title {
     font-size: 3rem;
@@ -656,13 +664,6 @@ font-size: 4.8rem;
   }
 
 /* halves hero banner unlike home page*/
-
-.bg--halfed {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 50vh;
-  }
 
 /* formats item block on menu*/
 
