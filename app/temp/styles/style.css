@@ -484,6 +484,11 @@ ul {
 	list-style: none;
 }
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
 .banner {
 
 }
@@ -608,3 +613,22 @@ font-size: 4.8rem;
 .nav ul li {
       padding-right: 10px;
     }
+
+.menu--hide ul {
+      display: none;
+    }
+
+.menu--reveal:hover ul {
+      display: block;
+    }
+
+@media (min-width: 800px) {
+
+.menu ul {
+      padding-left: 0px;
+      line-height: 2rem
+  }
+      .menu ul :nth-child(1) {
+        padding-top: 1rem; 
+      }
+  }

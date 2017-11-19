@@ -12,3 +12,28 @@
     }
   }
 }
+
+.menu {
+  
+  &--hide {
+    ul {
+      display: none;
+    }
+  }
+  &--reveal:hover {
+    ul {
+      display: block;
+    }
+  }
+
+  ul {
+    
+    @mixin atMedium {
+      padding-left: 0px;
+      line-height: 2rem;
+      :nth-child(1) {
+        padding-top: 1rem; 
+      }
+    }
+  }
+}
