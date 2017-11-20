@@ -1,4 +1,5 @@
 .horizontal-lines {
+  padding-top: 1.3rem;
 
   &--first {
     width: 90%;

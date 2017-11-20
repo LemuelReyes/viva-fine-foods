@@ -563,6 +563,15 @@ font-size: 4.8rem;
     position: relative;
   }
 
+.banner--baked-goods-menu {
+    background-image: url('../../assets/images/baked-goods-banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
 .welcome--title {
     margin: 0 auto;
     text-align: center;
@@ -610,6 +619,10 @@ font-size: 4.8rem;
     line-height: 1.7rem;
     font-size: 1rem;
   }
+
+.horizontal-lines {
+  padding-top: 1.3rem;
+}
 
 .horizontal-lines--first {
     width: 90%;

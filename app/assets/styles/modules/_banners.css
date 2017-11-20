@@ -42,4 +42,13 @@
     background-repeat: no-repeat;
     position: relative;
   }
+
+  &--baked-goods-menu {
+    background-image: url('../../assets/images/baked-goods-banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    background-repeat: no-repeat;
+    position: relative;
+  }
 }
