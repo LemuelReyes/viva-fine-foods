@@ -12,6 +12,7 @@
   &--price {
     font-weight: bold;
     font-size: 0.9rem;
+    padding-left: 0.4rem;
   }
   &--description {
     padding-top: 0;
