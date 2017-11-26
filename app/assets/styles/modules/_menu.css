@@ -1,6 +1,16 @@
 /* formats item block on menu*/
 
 .item {
+  
+  @mixin atMedium {
+    width: 50%;
+  }
+
+  &--wrapper {
+    display: flex;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+  }
   &--bar {
     width: 100%;
   }
