@@ -2,6 +2,8 @@
   &--main {
     background-image: url('../../assets/images/headerviva.jpeg');
     background-size: cover;
+    background-position: -7rem 0rem;
+    background-repeat: no-repeat;
     position: relative;
     height: 100vh;
   }

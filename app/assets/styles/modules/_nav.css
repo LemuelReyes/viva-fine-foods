@@ -2,7 +2,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-
+  
   ul {
     display: flex;
     flex-direction: row;
@@ -14,7 +14,7 @@
 }
 
 .dropdown {
-  
+
   &--menu-hide {
     ul {
       display: none;
@@ -27,12 +27,12 @@
   }
 
   ul {
-    
+
     @mixin atMedium {
       padding-left: 0px;
       line-height: 2rem;
       :nth-child(1) {
-        padding-top: 1rem; 
+        padding-top: 1rem;
       }
     }
   }
