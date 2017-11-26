@@ -589,27 +589,38 @@ font-size: 4.8rem;
 
 .footer {
     background-color: #20252d;
-    height: 25vh;
+    height: 20%;
     color: #ffffff;
     line-height: 1.3rem;
 }
 
 .footer__hours__top-column {
-     position: absolute;
-     -ms-flex-item-align: start;
-         align-self: flex-start;
-     margin-top: 1rem;
+     width: 100%;
+     padding-top: 1rem;
+     text-align: center;
+   }
+
+.footer__hours-wrapper {
+      padding: 1.5rem 0rem;
    }
 
 .footer__hours__left-column {
-     width: 50%;
-     margin-top: 1rem;
+      text-align: center;
+      width: 50%;
    }
 
+.footer__hours__left-column span {
+        display: block;
+      }
+
 .footer__hours__right-column {
-     width: 36%;
-     margin-top: 1rem;
+     text-align: center;
+     width: 50%;
    }
+
+.footer__hours__right-column span {
+       display: block;
+     }
 
 .content--paragraph {
     margin: 0 auto;

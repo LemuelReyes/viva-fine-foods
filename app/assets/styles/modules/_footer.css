@@ -1,22 +1,32 @@
 .footer {
     background-color: #20252d;
-    height: 25vh;
+    height: 20%;
     color: #ffffff;
     line-height: 1.3rem;
 
    &__hours__top-column {
-     position: absolute;
-     align-self: flex-start;
-     margin-top: 1rem;
+     width: 100%;
+     padding-top: 1rem;
+     text-align: center;
+   }
+
+   &__hours-wrapper {
+      padding: 1.5rem 0rem;
    }
 
    &__hours__left-column {
-     width: 50%;
-     margin-top: 1rem;
+      text-align: center;
+      width: 50%;
+      span {
+        display: block;
+      }
    }
 
    &__hours__right-column {
-     width: 36%;
-     margin-top: 1rem;
+     text-align: center;
+     width: 50%;
+     span {
+       display: block;
+     }
    }
 }
