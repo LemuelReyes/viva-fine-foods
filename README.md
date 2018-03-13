@@ -1,1 +1,2 @@
-#  Empower "U" A Workforce Training Company INC #
+# Viva Fine Foods #
+### A coffee shop situated in Kitsilano. ###

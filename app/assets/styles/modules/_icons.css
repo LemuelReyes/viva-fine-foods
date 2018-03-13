@@ -1,0 +1,9 @@
+.icon {
+  &--coffee {
+    background-image: url('../../assets/images/blue-coffee.png');
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+  }
+}
