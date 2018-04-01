@@ -1,15 +1,20 @@
 /* formats item block on menu*/
 
 .item {
-  
-  @mixin atMedium {
+
+  /* @mixin atMedium {
     width: 50%;
-  }
+  } */
 
   &--wrapper {
-    display: flex;
-    flex-flow: wrap;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+
+    @mixin atMedium {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &--bar {
     width: 100%;

@@ -701,21 +701,22 @@ font-size: 4.8rem;
 
 /* formats item block on menu*/
 
-@media (min-width: 768px) {
-
-.item {
-    width: 50%
-}
-  }
+/* @mixin atMedium {
+    width: 50%;
+  } */
 
 .item--wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  }
+
+@media (min-width: 768px) {
+
+.item--wrapper {
+      grid-template-columns: 1fr 1fr
+  }
   }
 
 .item--bar {
