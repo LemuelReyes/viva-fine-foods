@@ -1,5 +1,5 @@
 .content {
-
+  transform: translateY(-2.5em);
   &--main-paragraph {
     margin: 0 auto;
     margin-bottom: 6rem;

@@ -600,7 +600,6 @@ font-size: 4.8rem;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto(1fr);
       grid-row-gap: 1em;
-      grid-column-gap: 0.5em;
       text-align: center;
       margin-bottom: 6em;
       -webkit-transform: translateY(2em);
@@ -643,6 +642,11 @@ font-size: 4.8rem;
    }
   }
 
+.content {
+  -webkit-transform: translateY(-2.5em);
+          transform: translateY(-2.5em);
+}
+
 .content--main-paragraph {
     margin: 0 auto;
     margin-bottom: 6rem;
@@ -654,7 +658,7 @@ font-size: 4.8rem;
   }
 
 .horizontal-lines {
-  padding-top: 1.3rem;
+  padding: 3em 0em;
 }
 
 .horizontal-lines--first {
