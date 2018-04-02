@@ -1,8 +1,9 @@
 .content {
 
-  &--paragraph {
+  &--main-paragraph {
     margin: 0 auto;
     margin-bottom: 6rem;
+    margin-top: 2rem;
     text-align: center;
     width: 90%;
     line-height: 1.7rem;
