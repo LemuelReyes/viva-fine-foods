@@ -1,22 +1,25 @@
 .footer {
-    background-color: #20252d;
-    height: 18em;
-    color: #ffffff;
-
-   &__hours_wrapper {
+      background-color: #20252d;
+      color: #ffffff;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto(1fr);
+      grid-template-rows: repeat(5, 1fr);
       grid-row-gap: 1em;
       text-align: center;
-      margin-bottom: 6em;
-      transform: translateY(2em);
+      width: 100%;
+      padding: 4em 0em;
 
       @mixin atSmall {
          grid-template-columns: 1fr;
          grid-column-gap: 1em;
          justify-items: end;
-         margin-right: 5em;
+      }
+
+   span {
+      margin-right: 0em;
+
+      @mixin atSmall {
+         margin-right: 10%;
       }
    }
 
