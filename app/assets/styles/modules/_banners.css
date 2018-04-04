@@ -10,31 +10,18 @@
 
     @mixin atSmall {
     background-position: 0;
+    height: 50vh;
     }
   }
 
-  x {
-    font-size: 5em;
-    color: !important white;
-  }
-
-  &--main-halved {
-    background-image: url('../../assets/images/headerviva.jpeg');
-    background-size: cover;
-    position: relative;
-    height: 50vh;
-  }
   &--title {
     font-size: 3rem;
     color: white;
 
     @mixin atSmall {
     font-size: 4.8rem;
-    }
-  }
-
-  &--title-adjustment {
     margin-bottom: 0.5rem;
+    }
   }
 
   &--breakfast-menu {
