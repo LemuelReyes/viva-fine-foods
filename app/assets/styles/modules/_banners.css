@@ -44,6 +44,7 @@
     height: 30vh;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
   }
 
   &--lunch-menu {
@@ -53,14 +54,17 @@
     height: 30vh;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
   }
 
   &--baked-goods-menu {
     background-image: url('../../assets/images/baked-goods-banner-bg.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 30vh;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
   }
 }

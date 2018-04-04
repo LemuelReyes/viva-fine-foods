@@ -571,6 +571,7 @@ font-size: 4.8rem;
     height: 30vh;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
   }
 
 .banner--lunch-menu {
@@ -580,15 +581,18 @@ font-size: 4.8rem;
     height: 30vh;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
   }
 
 .banner--baked-goods-menu {
     background-image: url('../../assets/images/baked-goods-banner-bg.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 30vh;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
   }
 
 .welcome--title {
@@ -747,9 +751,18 @@ font-size: 4.8rem;
 
 /* formats item block on menu*/
 
-/* @mixin atMedium {
-    width: 50%;
-  } */
+.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
 
 .item--wrapper {
     display: grid;
@@ -786,8 +799,8 @@ font-size: 4.8rem;
 
 .item--description {
     padding-top: 0;
+    margin: 0em 2em;
     text-align: center;
-    width: 100%;
     font-size: 0.8rem;
   }
 
@@ -853,16 +866,22 @@ font-size: 4.8rem;
 
 .contact-form button {
    color: #ffffff;
+   background-color: #0c6a7c;
    border: 0px solid #c9e6ff;
-   width: 80vw;
    height: 3em;
-   text-transform: uppercase;
  }
+
+.contact-form button:hover {
+     background-color: green;
+   }
+
+.contact-form input, .contact-form textarea {
+  background-color: #594e3d;
+}
 
 .contact-form input, .contact-form textarea, .contact-form button {
     text-align: center;
     color: #ffffff;
-    background-color: #594e3d;
     opacity: 0.6;
     width: 80vw;
     border-radius: 1em;

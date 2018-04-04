@@ -45,16 +45,22 @@
 
  button {
    color: #ffffff;
+   background-color: #0c6a7c;
    border: 0px solid #c9e6ff;
-   width: 80vw;
    height: 3em;
-   text-transform: uppercase;
+
+   &:hover {
+     background-color: green;
+   }
  }
+
+input, textarea {
+  background-color: #594e3d;
+}
 
  input, textarea, button {
     text-align: center;
     color: #ffffff;
-    background-color: #594e3d;
     opacity: 0.6;
     width: 80vw;
     border-radius: 1em;
