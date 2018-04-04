@@ -34,23 +34,31 @@
    border: none;
  }
 
- textarea {
-   height: 50vh;
+ label {
+   color: #1088a0;
  }
 
- input, textarea {
+ textarea {
+   height: 50vh;
+   padding-top: 2em;
+ }
+
+ button {
+   color: #ffffff;
+   border: 0px solid #c9e6ff;
+   width: 80vw;
+   height: 3em;
+   text-transform: uppercase;
+ }
+
+ input, textarea, button {
+    text-align: center;
+    color: #ffffff;
     background-color: #594e3d;
     opacity: 0.6;
     width: 80vw;
     border-radius: 1em;
  }
-
-button {
-  border: 0px solid #c9e6ff;
-  width: 80vw;
-  height: 3em;
-  text-transform: uppercase;
-}
 
 div {
   display:flex;

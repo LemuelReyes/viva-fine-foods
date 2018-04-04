@@ -832,8 +832,8 @@ font-size: 4.8rem;
     grid-auto-rows: minmax(2em, auto);
   }*/
 
-.contact-form textarea {
-   height: 50vh;
+.contact-form label {
+   color: #1088a0;
  }
 
 /*display: grid;
@@ -846,19 +846,27 @@ font-size: 4.8rem;
   margin-right: auto;
 */
 
-.contact-form input, .contact-form textarea {
+.contact-form textarea {
+   height: 50vh;
+   padding-top: 2em;
+ }
+
+.contact-form button {
+   color: #ffffff;
+   border: 0px solid #c9e6ff;
+   width: 80vw;
+   height: 3em;
+   text-transform: uppercase;
+ }
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    text-align: center;
+    color: #ffffff;
     background-color: #594e3d;
     opacity: 0.6;
     width: 80vw;
     border-radius: 1em;
  }
-
-.contact-form button {
-  border: 0px solid #c9e6ff;
-  width: 80vw;
-  height: 3em;
-  text-transform: uppercase;
-}
 
 .contact-form div {
   display:-webkit-box;
