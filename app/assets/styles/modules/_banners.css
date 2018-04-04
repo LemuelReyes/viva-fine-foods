@@ -6,6 +6,16 @@
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
+
+
+    @mixin atSmall {
+    background-position: 0;
+    }
+  }
+
+  x {
+    font-size: 5em;
+    color: !important white;
   }
 
   &--main-halved {
