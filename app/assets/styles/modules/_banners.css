@@ -5,12 +5,10 @@
     background-position: -7rem 0rem;
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
-
-
-    @mixin atSmall {
-    background-position: 0;
-    height: 50vh;
+    height: 90vh;
+    
+    @mixin atMedium {
+      background-position: 0;
     }
   }
 
@@ -23,35 +21,55 @@
     margin-bottom: 0.5rem;
     }
   }
+  
+  &--half {
+    background-image: url('../../assets/images/headerviva.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 50vh;
+  }
 
   &--breakfast-menu {
     background-image: url('../../assets/images/breakfast-banner-bg.jpg');
-    background-size: 29rem 24rem;
-    background-position: bottom;
     height: 30vh;
     background-repeat: no-repeat;
-    position: relative;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;  
+    
+    @mixin atMedium {
+    height: 40vh;
+    }
   }
 
   &--lunch-menu {
     background-image: url('../../assets/images/lunch-banner-bg.jpg');
-    background-size: cover;
-    background-position: center;
     height: 30vh;
     background-repeat: no-repeat;
-    position: relative;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;  
+    
+    @mixin atMedium {
+    height: 40vh;
+    }
   }
 
   &--baked-goods-menu {
     background-image: url('../../assets/images/baked-goods-banner-bg.jpg');
+    height: 30vh;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 30vh;
-    background-repeat: no-repeat;
-    position: relative;
-    background-attachment: fixed;
+    position: relative;  
+    
+    @mixin atMedium {
+    height: 40vh;
+    }
   }
 }

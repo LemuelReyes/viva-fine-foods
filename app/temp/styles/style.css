@@ -30,12 +30,7 @@ body {
  * Add the correct display in IE 9-.
  */
 
-article,
-aside,
-footer,
-header,
-nav,
-section {
+article, aside, footer, header, nav, section {
   display: block;
 }
 
@@ -57,9 +52,7 @@ h1 {
  * 1. Add the correct display in IE.
  */
 
-figcaption,
-figure,
-main { /* 1 */
+figcaption, figure, main { /* 1 */
   display: block;
 }
 
@@ -122,8 +115,7 @@ abbr[title] {
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 
-b,
-strong {
+b, strong {
   font-weight: inherit;
 }
 
@@ -131,8 +123,7 @@ strong {
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
-b,
-strong {
+b, strong {
   font-weight: bolder;
 }
 
@@ -141,9 +132,7 @@ strong {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-code,
-kbd,
-samp {
+code, kbd, samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
@@ -178,8 +167,7 @@ small {
  * all browsers.
  */
 
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -201,8 +189,7 @@ sup {
  * Add the correct display in IE 9-.
  */
 
-audio,
-video {
+audio, video {
   display: inline-block;
 }
 
@@ -239,11 +226,7 @@ svg:not(:root) {
  * 2. Remove the margin in Firefox and Safari.
  */
 
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   font-family: sans-serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
@@ -255,8 +238,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 
-button,
-input { /* 1 */
+button, input { /* 1 */
   overflow: visible;
 }
 
@@ -265,8 +247,7 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button,
-select { /* 1 */
+button, select { /* 1 */
   text-transform: none;
 }
 
@@ -276,10 +257,7 @@ select { /* 1 */
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
-html [type="button"], /* 1 */
-[type="reset"],
-[type="submit"] {
+button, html [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: button; /* 2 */
 }
 
@@ -287,10 +265,7 @@ html [type="button"], /* 1 */
  * Remove the inner border and padding in Firefox.
  */
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -299,10 +274,7 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -354,8 +326,7 @@ textarea {
  * 2. Remove the padding in IE 10-.
  */
 
-[type="checkbox"],
-[type="radio"] {
+[type="checkbox"], [type="radio"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
@@ -365,8 +336,7 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -384,8 +354,7 @@ textarea {
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -407,8 +376,7 @@ textarea {
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
 
-details, /* 1 */
-menu {
+details, menu {
   display: block;
 }
 
@@ -526,14 +494,13 @@ font-size: 4.8rem;
     background-position: -7rem 0rem;
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
+    height: 90vh;
   }
 
-@media (min-width: 530px) {
+@media (min-width: 768px) {
 
 .banner--main {
-    background-position: 0;
-    height: 50vh
+      background-position: 0
   }
   }
 
@@ -550,35 +517,75 @@ font-size: 4.8rem;
   }
   }
 
-.banner--breakfast-menu {
-    background-image: url('../../assets/images/breakfast-banner-bg.jpg');
-    background-size: 29rem 24rem;
-    background-position: bottom;
-    height: 30vh;
+.banner--half {
+    background-image: url('../../assets/images/headerviva.jpeg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    height: 50vh;
+  }
+
+.banner--breakfast-menu {
+    background-image: url('../../assets/images/breakfast-banner-bg.jpg');
+    height: 30vh;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+@media (min-width: 768px) {
+
+.banner--breakfast-menu {
+    height: 40vh
+  }
   }
 
 .banner--lunch-menu {
     background-image: url('../../assets/images/lunch-banner-bg.jpg');
-    background-size: cover;
-    background-position: center;
     height: 30vh;
     background-repeat: no-repeat;
-    position: relative;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+@media (min-width: 768px) {
+
+.banner--lunch-menu {
+    height: 40vh
+  }
   }
 
 .banner--baked-goods-menu {
     background-image: url('../../assets/images/baked-goods-banner-bg.jpg');
+    height: 30vh;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 30vh;
-    background-repeat: no-repeat;
     position: relative;
-    background-attachment: fixed;
+  }
+
+@media (min-width: 768px) {
+
+.banner--baked-goods-menu {
+    height: 40vh
+  }
+  }
+
+.welcome {
+    margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+
+.welcome {
+      margin-top: 5em
+}
   }
 
 .welcome--title {
@@ -588,70 +595,11 @@ font-size: 4.8rem;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 1.3rem;
-    margin-top: 2rem;
   }
 
 .welcome__second-line {
     width: 100%;
     margin-top: 0rem;
-  }
-
-.footer {
-      background-color: #20252d;
-      color: #ffffff;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(5, 1fr);
-      grid-row-gap: 1em;
-      text-align: center;
-      width: 100%;
-      padding: 4em 0em;
-}
-
-@media (min-width: 530px) {
-
-.footer {
-         grid-template-columns: 1fr;
-         grid-column-gap: 1em;
-         justify-items: end
-}
-  }
-
-.footer span {
-      margin-right: 0em;
-   }
-
-@media (min-width: 530px) {
-
-.footer span {
-         margin-right: 10%
-   }
-  }
-
-.footer__header {
-      grid-column: 1/3;
-      grid-row: 1/2;
-   }
-
-@media (min-width: 530px) {
-
-.footer__header {
-         grid-column: 1/1;
-         grid-row: 1/1
-   }
-  }
-
-.footer__sub-header {
-      grid-column: 1/3;
-      grid-row: 2/3;
-   }
-
-@media (min-width: 530px) {
-
-.footer__sub-header {
-         grid-column: 1/1;
-         grid-row: 2/2
-   }
   }
 
 .content {
@@ -667,6 +615,21 @@ font-size: 4.8rem;
     width: 90%;
     line-height: 1.7rem;
     font-size: 1rem;
+  }
+
+@media (min-width: 530px) {
+
+.content--main-paragraph {
+      width: 80%
+  }
+  }
+
+@media (min-width: 768px) {
+
+.content--main-paragraph {
+      width: 75%;
+      text-align: left
+  }
   }
 
 .horizontal-lines {
@@ -894,3 +857,61 @@ font-size: 4.8rem;
 .contact-form div:nth-child(1) {
   margin-top: 3em;
 }
+
+.footer {
+      background-color: #20252d;
+      color: #ffffff;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      grid-row-gap: 1em;
+      text-align: center;
+      width: 100%;
+      padding: 4em 0em;
+}
+
+@media (min-width: 530px) {
+
+.footer {
+         grid-template-columns: 1fr;
+         grid-column-gap: 1em;
+         justify-items: end
+}
+  }
+
+.footer span {
+      margin-right: 0em;
+   }
+
+@media (min-width: 530px) {
+
+.footer span {
+         margin-right: 10%
+   }
+  }
+
+.footer__header {
+      grid-column: 1/3;
+      grid-row: 1/2;
+   }
+
+@media (min-width: 530px) {
+
+.footer__header {
+         grid-column: 1/1;
+         grid-row: 1/1
+   }
+  }
+
+.footer__sub-header {
+      grid-column: 1/3;
+      grid-row: 2/3;
+   }
+
+@media (min-width: 530px) {
+
+.footer__sub-header {
+         grid-column: 1/1;
+         grid-row: 2/2
+   }
+  }

@@ -1,0 +1,45 @@
+.welcome {
+    margin-top: 2em;
+
+    @mixin atMedium {
+      margin-top: 5em;
+    }
+  &--title {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+
+
+  &__second-line {
+    width: 100%;
+    margin-top: 0rem;
+  }
+}
+
+
+.content {
+  transform: translateY(-2.5em);
+
+  &--main-paragraph {
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+    text-align: center;
+    width: 90%;
+    line-height: 1.7rem;
+    font-size: 1rem;
+
+    @mixin atSmall {
+      width: 80%;
+    }
+
+    @mixin atMedium {
+      width: 75%;
+      text-align: left;
+    }
+  }
+}
