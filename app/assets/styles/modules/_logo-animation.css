@@ -1,0 +1,55 @@
+@keyframes logo-down {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to  {
+      transform: translate3d(0, 3em, 0);
+    }
+}
+
+.logo {
+
+  &__animation-right {
+      animation: logo-down 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      background-image: url('../../assets/images/blue-coffee.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 9em;
+      width: 4em;
+      z-index: 2;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      @mixin atMedium {
+        height: 15em;
+        width: 8em;
+        right: 3em;
+      }
+  }
+
+  &__animation-left {
+    animation: logo-down 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    background-image: url('../../assets/images/blue-coffee.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 9em;
+    width: 4em;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @mixin atMedium {
+      height: 15em;
+      width: 8em;
+      left: 3em;
+    }
+  }
+}

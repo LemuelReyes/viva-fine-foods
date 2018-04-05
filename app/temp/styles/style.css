@@ -826,6 +826,7 @@ font-size: 4.8rem;
 
 .contact-form button:hover {
      background-color: green;
+     cursor: pointer;
    }
 
 .contact-form input, .contact-form textarea {
@@ -906,4 +907,82 @@ font-size: 4.8rem;
          grid-column: 1/1;
          grid-row: 2/2
    }
+  }
+
+@-webkit-keyframes logo-down {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    to  {
+      -webkit-transform: translate3d(0, 3em, 0);
+              transform: translate3d(0, 3em, 0);
+    }
+}
+
+@keyframes logo-down {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    to  {
+      -webkit-transform: translate3d(0, 3em, 0);
+              transform: translate3d(0, 3em, 0);
+    }
+}
+
+.logo__animation-right {
+      -webkit-animation: logo-down 2s;
+              animation: logo-down 2s;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      background-image: url('../../assets/images/blue-coffee.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 9em;
+      width: 4em;
+      z-index: 2;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
+
+@media (min-width: 768px) {
+
+.logo__animation-right {
+        height: 15em;
+        width: 8em;
+        right: 3em
+  }
+  }
+
+.logo__animation-left {
+    -webkit-animation: logo-down 2s;
+            animation: logo-down 2s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    background-image: url('../../assets/images/blue-coffee.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 9em;
+    width: 4em;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+@media (min-width: 768px) {
+
+.logo__animation-left {
+      height: 15em;
+      width: 8em;
+      left: 3em
+  }
   }
