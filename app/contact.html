@@ -43,28 +43,29 @@
 
     <div id="map"></div>
 
-    <form class="contact-form" action="index.html" method="post">
-            <div>
-              <label>Name</label>
-              <input autofocus required type="text" name="firstname">
-            </div>
-            <div>
-              <label>Phone</label>
-              <input type="text" name="phone">
-            </div>
-            <div>
-              <label>E-mail</label>
-              <input required type="email" name="email">
-            </div>
-            <div>
-            <label>Message</label>
-            <textarea required name="message"></textarea>
-            </div>
-            <div>
-              <button>Submit</button>
-            </div>
-  </form>
-
+    <div class="contact-form__wrapper">
+          <form class="contact-form" action="index.html" method="post">
+                  <span class="contact-form__info-wrapper">
+                    <label>Name</label>
+                    <input autofocus required type="text" name="firstname">
+                  </span>
+                  <span class="contact-form__info-wrapper">
+                    <label>Phone</label>
+                    <input type="text" name="phone">
+                  </span>
+                  <span class="contact-form__info-wrapper">
+                    <label>E-mail</label>
+                    <input required type="email" name="email">
+                  </span>
+                  <span class="contact-form__info-wrapper">
+                  <label>Message</label>
+                  <textarea required name="message"></textarea>
+                </span>
+                  <span class="contact-form__info-wrapper">
+                    <button>Submit</button>
+                  </span>
+          </form>
+    </div>
 
 
   <footer class="footer brand--white">
