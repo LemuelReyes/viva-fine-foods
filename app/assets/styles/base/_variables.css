@@ -1,3 +1,25 @@
+
+
+/*  POSITIONING */
+
+.flex {
+	display: flex;
+
+	&--center {
+		justify-content: center;
+		align-items: center;
+	}
+
+	&--end {
+		justify-content: center;
+		align-items: flex-end;
+	}
+}
+
+/*  BRAND COLOR */
+
+$mainBlue: #1088a0;
+
 .brand {
 
   &--blue {
@@ -12,5 +34,3 @@
     font-weight: 400;
   }
 }
-
-$mainBlue: #1088a0;

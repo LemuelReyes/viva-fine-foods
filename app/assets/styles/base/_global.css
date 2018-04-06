@@ -15,19 +15,6 @@ img {
 * {
 	box-sizing: border-box;
 }
-.flex {
-	display: flex;
-
-	&--center {
-		justify-content: center;
-		align-items: center;
-	}
-
-	&--end {
-		justify-content: center;
-		align-items: flex-end;
-	}
-}
 
 ul {
 	list-style: none;

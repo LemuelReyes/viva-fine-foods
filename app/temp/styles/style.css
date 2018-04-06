@@ -437,6 +437,17 @@ img {
 	        box-sizing: border-box;
 }
 
+ul {
+	list-style: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/*  POSITIONING */
+
 .flex {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -461,14 +472,7 @@ img {
 		        align-items: flex-end;
 	}
 
-ul {
-	list-style: none;
-}
-
-a {
-	color: white;
-	text-decoration: none;
-}
+/*  BRAND COLOR */
 
 .brand--blue {
     color: #1088a0;
@@ -487,179 +491,6 @@ a {
 font-size: 4.8rem;
 }
 */
-
-/*  styles main banner and menu banners */
-
-.banner--main {
-    background-image: url('../../assets/images/headerviva.jpeg');
-    background-size: cover;
-    background-position: -7em 0em;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 90vh;
-  }
-
-@media (min-width: 768px) {
-
-.banner--main {
-      background-position: 0
-  }
-  }
-
-.banner--title {
-    font-size: 3rem;
-    color: white;
-  }
-
-@media (min-width: 530px) {
-
-.banner--title {
-    font-size: 4.8rem;
-    margin-bottom: 0.5rem
-  }
-  }
-
-.banner--half {
-    background-image: url('../../assets/images/headerviva.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 50vh;
-  }
-
-.banner--breakfast-menu {
-    background-image: url('../../assets/images/breakfast-banner-bg.jpg');
-    height: 30vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-
-@media (min-width: 768px) {
-
-.banner--breakfast-menu {
-    height: 40vh
-  }
-  }
-
-.banner--lunch-menu {
-    background-image: url('../../assets/images/lunch-banner-bg.jpg');
-    height: 30vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-
-@media (min-width: 768px) {
-
-.banner--lunch-menu {
-    height: 40vh
-  }
-  }
-
-.banner--baked-goods-menu {
-    background-image: url('../../assets/images/baked-goods-banner-bg.jpg');
-    height: 30vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-
-@media (min-width: 768px) {
-
-.banner--baked-goods-menu {
-    height: 40vh
-  }
-  }
-
-.welcome {
-    margin-top: 2em;
-}
-
-@media (min-width: 768px) {
-
-.welcome {
-      margin-top: 5em
-}
-  }
-
-.welcome--title {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.3rem;
-  }
-
-.welcome__second-line {
-    width: 100%;
-    margin-top: 0rem;
-  }
-
-.content {
-  -webkit-transform: translateY(-2.5em);
-          transform: translateY(-2.5em);
-}
-
-.content--main-paragraph {
-    margin: 0 auto;
-    margin-bottom: 6rem;
-    margin-top: 2rem;
-    text-align: center;
-    width: 90%;
-    line-height: 1.7rem;
-    font-size: 1rem;
-  }
-
-@media (min-width: 530px) {
-
-.content--main-paragraph {
-      width: 80%
-  }
-  }
-
-@media (min-width: 768px) {
-
-.content--main-paragraph {
-      width: 75%;
-      text-align: left
-  }
-  }
-
-.horizontal-lines {
-  padding: 3em 0em;
-}
-
-.horizontal-lines--first {
-    width: 90%;
-    margin-bottom: 2px;
-  }
-
-.horizontal-lines--second {
-    margin-top: 2px;
-    width: 90%;
-    height: 3px;
-    background-color: black;
-  }
-
-#particles-js {
-  width: 100%;
-  height: 100%;
-  position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index: -1;
-}
 
 .nav {
   position: absolute;
@@ -693,10 +524,10 @@ font-size: 4.8rem;
 
 .dropdown ul {
       padding-left: 0px;
-      line-height: 2rem
+      line-height: 2em
   }
       .dropdown ul :nth-child(1) {
-        padding-top: 1rem;
+        padding-top: 1em;
       }
   }
 
@@ -744,7 +575,7 @@ font-size: 4.8rem;
 .item--price {
     font-weight: bold;
     font-size: 0.9rem;
-    padding-left: 0.4rem;
+    padding-left: 0.4em;
     color: #1088a0;
   }
 
@@ -755,13 +586,165 @@ font-size: 4.8rem;
     font-size: 0.8rem;
   }
 
-.icon--coffee {
-    background-image: url('../../assets/images/blue-coffee.png');
-    height: 250px;
-    width: 250px;
-    position: absolute;
-    top: 0;
+/*  styles main banner and menu banners */
+
+.banner--main {
+    background-image: url('../../assets/images/headerviva.jpg');
+    background-size: cover;
+    background-position: -7em 0em;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 90vh;
   }
+
+@media (min-width: 768px) {
+
+.banner--main {
+      background-position: 0
+  }
+  }
+
+.banner--title {
+    font-size: 3rem;
+    color: white;
+  }
+
+@media (min-width: 530px) {
+
+.banner--title {
+    font-size: 4.8rem;
+    margin-bottom: 0.5rem
+  }
+  }
+
+.banner--half {
+    background-image: url('../../assets/images/headerviva.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 50vh;
+  }
+
+.banner__bg-menu-half-cover {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 30vh;
+  }
+
+@media (min-width: 768px) {
+
+.banner__bg-menu-half-cover {
+    height: 40vh
+  }
+  }
+
+.banner--breakfast-menu {
+    background-image: url('../../assets/images/breakfast-banner-bg.jpg');
+  }
+
+.banner--lunch-menu {
+    background-image: url('../../assets/images/lunch-banner-bg.jpg');
+  }
+
+.banner--baked-goods-menu {
+    background-image: url('../../assets/images/baked-goods-banner-bg.jpg');
+  }
+
+/*  styles the background particles */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: -1;
+}
+
+/*  styles the welcome title in home page*/
+
+.welcome {
+    margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+
+.welcome {
+      margin-top: 5em
+}
+  }
+
+.welcome--title {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+
+.welcome__second-line {
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+/*  styles the horizontal lines that sandwiches content on each page */
+
+.horizontal-lines {
+  padding: 3em 0em;
+}
+
+.horizontal-lines--first {
+    width: 90%;
+    margin-bottom: 2px;
+  }
+
+.horizontal-lines--second {
+    margin-top: 2px;
+    width: 90%;
+    height: 3px;
+    background-color: black;
+  }
+
+/*  styles the pargraphs for main page */
+
+.content {
+  -webkit-transform: translateY(-2.5em);
+          transform: translateY(-2.5em);
+}
+
+.content--main-paragraph {
+    margin: 0 auto;
+    margin-bottom: 6em;
+    margin-top: 2em;
+    text-align: center;
+    width: 90%;
+    line-height: 1.7em;
+    font-size: 1rem;
+  }
+
+@media (min-width: 530px) {
+
+.content--main-paragraph {
+      width: 80%
+  }
+  }
+
+@media (min-width: 768px) {
+
+.content--main-paragraph {
+      width: 75%;
+      text-align: left
+  }
+  }
+
+/*  styles google maps in contact page */
 
 #map {
   height: 50vh;
@@ -911,6 +894,8 @@ font-size: 4.8rem;
    }
   }
 
+/*  adds animation to menu pages */
+
 @-webkit-keyframes logo-down {
     from {
       -webkit-transform: translate3d(0, 0, 0);
@@ -987,63 +972,4 @@ font-size: 4.8rem;
       width: 8em;
       left: 3em
   }
-  }
-
-/*  styles the pargraphs for main page */
-
-.content {
-  -webkit-transform: translateY(-2.5em);
-          transform: translateY(-2.5em);
-}
-
-.content--main-paragraph {
-    margin: 0 auto;
-    margin-bottom: 6rem;
-    margin-top: 2rem;
-    text-align: center;
-    width: 90%;
-    line-height: 1.7rem;
-    font-size: 1rem;
-  }
-
-@media (min-width: 530px) {
-
-.content--main-paragraph {
-      width: 80%
-  }
-  }
-
-@media (min-width: 768px) {
-
-.content--main-paragraph {
-      width: 75%;
-      text-align: left
-  }
-  }
-
-/*  styles the welcome title in home page*/
-
-.welcome {
-    margin-top: 2em;
-}
-
-@media (min-width: 768px) {
-
-.welcome {
-      margin-top: 5em
-}
-  }
-
-.welcome--title {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.3rem;
-  }
-
-.welcome__second-line {
-    width: 100%;
-    margin-top: 0rem;
   }
