@@ -22,7 +22,7 @@
 
     label {
       margin-bottom: 0.5em;
-      color: #1088a0;
+      color: $mainBlue;
     }
   }
 
@@ -44,7 +44,7 @@
    height: 3em;
 
    &:hover {
-     background-color: green;
+     background-color: #63db53;
      cursor: pointer;
    }
  }

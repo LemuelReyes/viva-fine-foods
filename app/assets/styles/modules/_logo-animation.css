@@ -1,3 +1,5 @@
+/*  adds animation to menu pages */
+
 @keyframes logo-down {
     from {
       transform: translate3d(0, 0, 0);

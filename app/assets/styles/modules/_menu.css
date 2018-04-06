@@ -28,8 +28,8 @@
   &--price {
     font-weight: bold;
     font-size: 0.9rem;
-    padding-left: 0.4rem;
-    color: #1088a0;
+    padding-left: 0.4em;
+    color: $mainBlue;
   }
   &--description {
     padding-top: 0;

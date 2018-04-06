@@ -1,12 +1,14 @@
+/*  styles main banner and menu banners */
+
 .banner {
   &--main {
     background-image: url('../../assets/images/headerviva.jpeg');
     background-size: cover;
-    background-position: -7rem 0rem;
+    background-position: -7em 0em;
     background-repeat: no-repeat;
     position: relative;
     height: 90vh;
-    
+
     @mixin atMedium {
       background-position: 0;
     }
@@ -21,7 +23,7 @@
     margin-bottom: 0.5rem;
     }
   }
-  
+
   &--half {
     background-image: url('../../assets/images/headerviva.jpeg');
     background-size: cover;
@@ -38,8 +40,8 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    position: relative;  
-    
+    position: relative;
+
     @mixin atMedium {
     height: 40vh;
     }
@@ -52,8 +54,8 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    position: relative;  
-    
+    position: relative;
+
     @mixin atMedium {
     height: 40vh;
     }
@@ -66,8 +68,8 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    position: relative;  
-    
+    position: relative;
+
     @mixin atMedium {
     height: 40vh;
     }

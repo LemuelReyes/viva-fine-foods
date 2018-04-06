@@ -1,0 +1,23 @@
+/*  styles the welcome title in home page*/
+
+.welcome {
+    margin-top: 2em;
+
+    @mixin atMedium {
+      margin-top: 5em;
+    }
+  &--title {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+
+
+  &__second-line {
+    width: 100%;
+    margin-top: 0rem;
+  }
+}
