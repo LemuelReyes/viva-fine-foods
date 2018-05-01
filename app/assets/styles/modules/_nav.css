@@ -1,39 +1,65 @@
 .nav {
-  position: absolute;
+  width: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  position: fixed;
   bottom: 0;
-  right: 0;
+  z-index: 1;
+  background-color: rgba(16,136,160, 0.9);
+  transition: 0.5s;
+  display: block;
 
   ul {
-    display: flex;
-    flex-direction: row;
+    text-align: center;
+    padding-left: 0;
 
     li {
-      padding-right: 10px;
+      padding: 1em 0;
+      font-size: 2rem;
+      transition: 0.3s;
+
+      &:not(:first-child):hover {
+        background-color: rgba(12,108,128,0.5);
+      }
     }
   }
+}
+
+.hamburger-icon {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  display: block;
+  cursor: pointer;
 }
 
 .dropdown {
 
   &--menu-hide {
     ul {
-      display: none;
+      transition: opacity 1s ease-in;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
     }
   }
+
   &--menu-reveal:hover {
     ul {
-      display: block;
+      opacity: 1;
+      height: auto;
+
+      li:hover {
+        background-color: rgba(10,97,115,0.8);
+      }
     }
   }
 
   ul {
-
-    @mixin atMedium {
-      padding-left: 0px;
-      line-height: 2em;
-      :nth-child(1) {
-        padding-top: 1em;
-      }
+    li {
+      padding-top: 1em;
     }
   }
 }

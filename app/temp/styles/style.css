@@ -493,43 +493,64 @@ font-size: 4.8rem;
 */
 
 .nav {
-  position: absolute;
+  width: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  position: fixed;
   bottom: 0;
-  right: 0;
+  z-index: 1;
+  background-color: rgba(16,136,160, 0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: block;
 }
 
 .nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    text-align: center;
+    padding-left: 0;
   }
 
 .nav ul li {
-      padding-right: 10px;
+      padding: 1em 0;
+      font-size: 2rem;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
     }
 
+.nav ul li:not(:first-child):hover {
+        background-color: rgba(12,108,128,0.5);
+      }
+
+.hamburger-icon {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  display: block;
+  cursor: pointer;
+}
+
 .dropdown--menu-hide ul {
-      display: none;
+      -webkit-transition: opacity 1s ease-in;
+      transition: opacity 1s ease-in;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
     }
 
 .dropdown--menu-reveal:hover ul {
-      display: block;
+      opacity: 1;
+      height: auto;
     }
 
-@media (min-width: 768px) {
-
-.dropdown ul {
-      padding-left: 0px;
-      line-height: 2em
-  }
-      .dropdown ul :nth-child(1) {
-        padding-top: 1em;
+.dropdown--menu-reveal:hover ul li:hover {
+        background-color: rgba(10,97,115,0.8);
       }
-  }
+
+.dropdown ul li {
+      padding-top: 1em;
+    }
 
 /* formats item block on menu*/
 
