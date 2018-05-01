@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: -7em 0em;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     height: 90vh;
 
@@ -31,6 +32,11 @@
     background-repeat: no-repeat;
     position: relative;
     height: 50vh;
+
+    @mixin atMedium {
+      background-position: 0 -19em;
+      background-attachment: fixed;
+    }
   }
 
   &__bg-menu-half-cover {
