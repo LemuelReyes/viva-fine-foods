@@ -12,32 +12,37 @@
   <body>
     <div class="banner--half flex flex--center">
       <h1 class="banner--title">Vibe Cafe</h1>
-      <nav class="nav">
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li class="dropdown dropdown--menu-hide dropdown--menu-reveal">
-            <a href="#">Menu</a>
+
+          <span id="hamburger-icon" class="hamburger-icon" onclick="openNav()">&#9776;</span>
+
+          <nav class="nav" id="nav">
             <ul>
               <li>
-                <a href="breakfast.html">Breakfast</a>
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
               </li>
               <li>
-                <a href="lunch.html">Lunch</a>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="dropdown dropdown--menu-hide dropdown--menu-reveal ">
+                <a href="#">Menu</a>
+                <ul>
+                  <li>
+                    <a href="breakfast.html">Breakfast</a>
+                  </li>
+                  <li>
+                    <a href="lunch.html">Lunch</a>
+                  </li>
+                  <li>
+                    <a href="bakedgoods.html">Baked Goods</a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="bakedgoods.html">Baked Goods</a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
+          </nav>
+        </div>
 
     <div id="particles-js">
     </div>
@@ -170,6 +175,7 @@
 
   <!-- <div id="particles-js">
   </div>   -->
+    <script type='text/javascript' src='./assets/scripts/nav.js'></script>
     <script type='text/javascript' src='./assets/scripts/particles.js'></script>
   	<script type='text/javascript' src='./assets/scripts/app.js'></script>
 
