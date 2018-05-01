@@ -839,11 +839,12 @@ font-size: 4.8rem;
 .footer {
       background-color: #20252d;
       color: #ffffff;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(5, 1fr);
-      grid-row-gap: 1em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       text-align: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
       width: 100%;
       padding: 4em 0em;
 }
@@ -857,42 +858,54 @@ font-size: 4.8rem;
 }
   }
 
-.footer span {
-      margin-right: 0em;
+.footer__vibe-logo {
+     height: 17em;
+     margin-left: 1em;
    }
 
-@media (min-width: 530px) {
+.footer__hours-right-sidebar {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     margin: 0em 1em;
 
-.footer span {
-         margin-right: 10%
    }
+
+.footer__hours-right-sidebar span:nth-child(1) {
+       margin-top: 0em;
+     }
+
+.footer__hours-right-sidebar span {
+       margin-top: 1em;
+     }
+
+@media (min-width: 768px) {
+
+.footer__hours-right-sidebar {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: repeat(5, 2em)
+
+   }
+
+       .footer__hours-right-sidebar span {
+         margin-top: 0em;
+       }
+
+       .footer__hours-right-sidebar span:nth-child(1) {
+         grid-column: 1/3;
+       }
+
+       .footer__hours-right-sidebar span:nth-child(2) {
+         grid-column: 1/3;
+       }
   }
 
-.footer__header {
-      grid-column: 1/3;
-      grid-row: 1/2;
-   }
-
-@media (min-width: 530px) {
-
-.footer__header {
-         grid-column: 1/1;
-         grid-row: 1/1
-   }
-  }
-
-.footer__sub-header {
-      grid-column: 1/3;
-      grid-row: 2/3;
-   }
-
-@media (min-width: 530px) {
-
-.footer__sub-header {
-         grid-column: 1/1;
-         grid-row: 2/2
-   }
-  }
+/* ends footer selector */
 
 /*  adds animation to menu pages */
 
