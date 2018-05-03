@@ -1,6 +1,7 @@
 /*  styles main banner and menu banners */
 
 .banner {
+
   &--main {
     background-image: url('../../assets/images/headerviva.jpg');
     background-size: cover;
