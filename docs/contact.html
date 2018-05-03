@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./docs/assets/styles/style.css">
+    <title>breakfast menu</title>
+  </head>
+  <body>
+    <div class="banner--half flex flex--center">
+      <h1 class="banner--title">Vibe Cafe</h1>
+
+          <span id="hamburger-icon" class="hamburger-icon" onclick="openNav()">&#9776;</span>
+
+          <nav class="nav" id="nav">
+            <ul>
+              <li>
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+              </li>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="dropdown dropdown--menu-hide dropdown--menu-reveal ">
+                <a href="#">Menu</a>
+                <ul>
+                  <li>
+                    <a href="breakfast.html">Breakfast</a>
+                  </li>
+                  <li>
+                    <a href="lunch.html">Lunch</a>
+                  </li>
+                  <li>
+                    <a href="bakedgoods.html">Baked Goods</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    <div id="particles-js"></div>
+
+    <div id="map"></div>
+
+    <div class="contact-form__wrapper">
+          <form class="contact-form" action="//formspree.io/reyeslemuel@hotmail.com" method="post">
+                  <span class="contact-form__info-wrapper">
+                    <label>Name</label>
+                    <input autofocus required type="text" name="name">
+                  </span>
+                  <span class="contact-form__info-wrapper">
+                    <label>Phone</label>
+                    <input type="text" name="phone">
+                  </span>
+                  <span class="contact-form__info-wrapper">
+                    <label>E-mail</label>
+                    <input required type="email" name="email">
+                  </span>
+                  <span class="contact-form__info-wrapper">
+                  <label>Message</label>
+                  <textarea required name="message"></textarea>
+                  </span>
+                  <span class="contact-form__info-wrapper">
+                    <button>Submit</button>
+                  </span>
+          </form>
+    </div>
+
+
+    <footer class="footer brand--white">
+          <img src="./assets/images/vibe-cafe-logo.png" alt="logo of vibe cafe" class="footer__vibe-logo">
+          <div class="footer__hours-right-sidebar">
+            <span class="footer__header">Opening Hours</span>
+            <span class="footer__sub-header">Monday: Closed</span>
+            <span>Tuesday: 7:00-6:00</span>
+            <span>Wednesday: 7:00-6:00</span>
+            <span>Thursday: 7:00-6:00</span>
+            <span>Friday: 7:00-6:00</span>
+            <span>Saturday: 8:00-6:00</span>
+            <span>Sunday: 8:00-6:00</span>
+          </div>
+    </footer>
+  <!-- <div id="particles-js">
+  </div>   -->
+    <script type='text/javascript' src='./assets/scripts/nav.js'></script>
+    <script type="text/javascript" src="./assets/scripts/particles.js"></script>
+    <script type="text/javascript" src="./assets/scripts/app.js"></script>
+    <script type="text/javascript" src="./assets/scripts/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr3feZbwgW1BouqX5M4CB3th5uQ2A7S5w&callback=initMap">
+    </script>
+
+  </body>
+</html>
