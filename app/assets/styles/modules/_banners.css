@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    height: 90vh;
+    height: 100vh;
 
     @mixin atMedium {
       background-position: 0;

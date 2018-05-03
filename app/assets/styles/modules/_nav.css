@@ -1,9 +1,10 @@
 .nav {
   width: 0;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   position: fixed;
-
+  left: 0;
+  top: 0;
   z-index: 1;
   background-color: rgba(16,136,160, 0.9);
   transition: 0.5s;

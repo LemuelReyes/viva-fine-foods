@@ -494,10 +494,11 @@ font-size: 4.8rem;
 
 .nav {
   width: 0;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   position: fixed;
-
+  left: 0;
+  top: 0;
   z-index: 1;
   background-color: rgba(16,136,160, 0.9);
   -webkit-transition: 0.5s;
@@ -616,7 +617,7 @@ font-size: 4.8rem;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    height: 90vh;
+    height: 100vh;
   }
 
 @media (min-width: 768px) {
