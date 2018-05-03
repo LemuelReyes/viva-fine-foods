@@ -615,14 +615,14 @@ font-size: 4.8rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100vh;
   }
 
 @media (min-width: 768px) {
 
 .banner--main {
-      background-position: 0
+      background-position: 0;
+      background-attachment: fixed
   }
   }
 
