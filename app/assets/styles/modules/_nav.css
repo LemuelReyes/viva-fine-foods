@@ -4,6 +4,7 @@
   overflow-x: hidden;
   position: fixed;
   bottom: 0;
+  left: 0;
   z-index: 1;
   background-color: rgba(16,136,160, 0.9);
   transition: 0.5s;
