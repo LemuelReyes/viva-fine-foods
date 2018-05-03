@@ -3,15 +3,15 @@
 .content {
   transform: translateY(-2.5em);
 
-  &--main-paragraph {
+  &--paragraph {
     margin: 0 auto;
-    margin-bottom: 6em;
+    margin-bottom: 1em;
     margin-top: 2em;
     text-align: center;
     width: 90%;
     line-height: 1.7em;
     font-size: 1rem;
-
+    
     @mixin atSmall {
       width: 80%;
     }

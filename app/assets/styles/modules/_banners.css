@@ -42,12 +42,12 @@
   &__bg-menu-half-cover {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     position: relative;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 50vh;
 
     @mixin atMedium {
+    background-attachment: fixed;
     height: 40vh;
     }
   }
